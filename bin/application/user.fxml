@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <Hyperlink layoutX="470.0" layoutY="11.0" onAction="#signOut" text="Sign Out" />
+      <Label fx:id="username" layoutX="11.0" layoutY="11.0" prefHeight="23.0" prefWidth="172.0" />
+      <TableView fx:id="classesTable" layoutX="11.0" layoutY="43.0" prefHeight="209.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="classColumn" prefWidth="75.0" text="CLass" />
+          <TableColumn fx:id="creditColumn" prefWidth="75.0" text="Credit" />
+            <TableColumn fx:id="gradeColumn" prefWidth="75.0" text="Grade" />
+        </columns>
+      </TableView>
+      <Hyperlink layoutX="12.0" layoutY="263.0" onAction="#newClass" prefHeight="23.0" prefWidth="106.0" text="Add/Update Class" />
+      <Label layoutX="254.0" layoutY="43.0" prefHeight="23.0" prefWidth="106.0" text="Cumulative GPA:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="cumulativeGPA" layoutX="362.0" layoutY="43.0" prefHeight="23.0" prefWidth="72.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

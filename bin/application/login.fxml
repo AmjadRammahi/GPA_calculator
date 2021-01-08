@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="txtEmail" layoutX="167.0" layoutY="95.0" prefHeight="30.0" prefWidth="203.0" promptText="email" />
+      <PasswordField fx:id="txtPass" layoutX="167.0" layoutY="137.0" prefHeight="30.0" prefWidth="203.0" promptText="password" />
+      <Button layoutX="208.0" layoutY="197.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="122.0" text="Login" />
+      <Hyperlink fx:id="newAccount" layoutX="168.0" layoutY="167.0" onAction="#newAccount" prefHeight="23.0" prefWidth="182.0" text="Dont have an account? Sign Up" />
+      <Label fx:id="isConnected" layoutX="124.0" layoutY="23.0" prefHeight="53.0" prefWidth="273.0" />
+   </children>
+</AnchorPane>
